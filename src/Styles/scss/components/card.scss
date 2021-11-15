@@ -1,0 +1,90 @@
+.card{
+  background-color: $light_dark_blue;
+  margin-top: 3rem;
+  border-radius: 2rem;
+  padding: 3rem;
+
+
+  &__heading{
+    display: flex;
+    &-image{
+      height: 8rem;
+      width: 9rem;
+      border-radius: 25rem;
+    }
+  }
+  &__text{
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    &-title{
+      font-weight: 900;
+      font-family: "Monolisa", sans-serif;
+      color: $white;
+      font-size: 2rem;
+    }
+    &-ref{
+      font-size: 1.7rem;
+      font-family: 'Lexend Deca', sans-serif;
+      color: $primary_blue;
+    }
+    &-join{
+      font-family: 'Monolisa', sans-serif;
+      font-size: 1.5rem;
+      letter-spacing: .1rem;
+      color: $white_transparent_75;
+    }
+  }
+  &__bio{
+    margin-top: 2rem;
+    font-weight: 200;
+    font-family: "Monolisa", sans-serif;
+    color: $white_transparent_75;
+    font-size: 1.5rem;
+  }
+
+  &__information{
+    background-color: #091b34;
+    border-radius: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.1rem 2rem;
+    margin-top: 2rem;
+    text-align: center;
+
+    &-category{
+      color: $white_transparent_75;
+      font-size: 1.5rem;
+      font-family: "Lexend Deca", sans-serif;
+    }
+    &-number{
+      font-weight: 700;
+      font-family: "Inter", sans-serif;
+      color: $white;
+      font-size: 1.7rem;
+      margin-top: 1.6rem;
+    }
+  }
+
+  &__links{
+    margin-top: 2rem;
+    div{
+      display: flex;
+      align-content: end;
+      align-items: end;
+    }
+
+    &-icons{
+      color: $white;
+      font-size: 2rem;
+      margin-top: 1.2rem;
+    }
+    &-text{
+      margin-left: 2rem;
+      font-size: 1.5rem;
+      font-family: Monolisa, sans-serif;
+      color:$white;
+    }
+  }
+}

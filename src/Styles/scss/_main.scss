@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&family=Lexend+Deca&display=swap');
+
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html{
+  font-size: 62.5% /*For taking the 1rem value to 10px*/;
+  background-color: $very_dark_blue;
+
+  @include responsive(desktop, large){
+    font-size: 50%;
+  }
+}
+
+body{
+  box-sizing: border-box;
+}
+
+main{
+  height: 100vh;
+  width: 100vw;
+  padding: 5rem 3rem;
+  @include responsive(mobile, small){
+    padding: 10rem 8rem;
+  }
+  @include responsive(mobile, moyen){
+    padding: 10rem 13rem;
+  }
+  @include responsive(mobile, large){
+    padding: 5rem 13rem;
+  }
+  @include responsive(mobile, xlarge){
+    padding: 5rem 20rem;
+  }
+
+}
+
+

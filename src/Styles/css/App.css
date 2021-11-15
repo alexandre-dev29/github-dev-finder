@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&family=Lexend+Deca&display=swap");
+.card {
+  background-color: #273962;
+  margin-top: 3rem;
+  border-radius: 2rem;
+  padding: 3rem; }
+  .card__heading {
+    display: flex; }
+    .card__heading-image {
+      height: 8rem;
+      width: 9rem;
+      border-radius: 25rem; }
+  .card__text {
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+    .card__text-title {
+      font-weight: 900;
+      font-family: "Monolisa", sans-serif;
+      color: #dbdbdb;
+      font-size: 2rem; }
+    .card__text-ref {
+      font-size: 1.7rem;
+      font-family: 'Lexend Deca', sans-serif;
+      color: #0079fe; }
+    .card__text-join {
+      font-family: 'Monolisa', sans-serif;
+      font-size: 1.5rem;
+      letter-spacing: .1rem;
+      color: rgba(255, 255, 255, 0.75); }
+  .card__bio {
+    margin-top: 2rem;
+    font-weight: 200;
+    font-family: "Monolisa", sans-serif;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.5rem; }
+  .card__information {
+    background-color: #091b34;
+    border-radius: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.1rem 2rem;
+    margin-top: 2rem;
+    text-align: center; }
+    .card__information-category {
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 1.5rem;
+      font-family: "Lexend Deca", sans-serif; }
+    .card__information-number {
+      font-weight: 700;
+      font-family: "Inter", sans-serif;
+      color: #dbdbdb;
+      font-size: 1.7rem;
+      margin-top: 1.6rem; }
+  .card__links {
+    margin-top: 2rem; }
+    .card__links div {
+      display: flex;
+      align-content: end;
+      align-items: end; }
+    .card__links-icons {
+      color: #dbdbdb;
+      font-size: 2rem;
+      margin-top: 1.2rem; }
+    .card__links-text {
+      margin-left: 2rem;
+      font-size: 1.5rem;
+      font-family: Monolisa, sans-serif;
+      color: #dbdbdb; }
+
+.nav {
+  display: flex;
+  width: 100%;
+  align-content: center;
+  align-items: center; }
+  .nav__title {
+    color: #dbdbdb;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    flex: 1; }
+  .nav__light {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #dbdbdb;
+    letter-spacing: .3rem; }
+  .nav__icon {
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    color: #dbdbdb; }
+
+.container {
+  width: 100%;
+  position: relative; }
+
+.form {
+  position: relative;
+  margin-top: 5rem; }
+  .form__input {
+    width: 100%;
+    padding: 3rem;
+    background-color: #273962;
+    outline: none;
+    border: none;
+    border-radius: 1.5rem; }
+    .form__input::placeholder {
+      color: white;
+      font-family: 'Lexend Deca', sans-serif; }
+  .form__button {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 10px;
+    padding: 1.5rem 2rem;
+    background-color: #0079fe;
+    border: none;
+    outline: none;
+    color: #dbdbdb;
+    font-family: 'Lexend Deca', sans-serif;
+    border-radius: 1.5rem;
+    font-size: 1.7rem; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  background-color: #14213b; }
+  @media (max-width: 1023px) {
+    html {
+      font-size: 50%; } }
+
+body {
+  box-sizing: border-box; }
+
+main {
+  height: 100vh;
+  width: 100vw;
+  padding: 5rem 3rem; }
+  @media (min-width: 640px) {
+    main {
+      padding: 10rem 8rem; } }
+  @media (min-width: 768px) {
+    main {
+      padding: 10rem 13rem; } }
+  @media (min-width: 1024px) {
+    main {
+      padding: 5rem 13rem; } }
+  @media (min-width: 1280px) {
+    main {
+      padding: 5rem 20rem; } }
