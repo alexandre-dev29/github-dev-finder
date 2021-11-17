@@ -29,7 +29,7 @@ function App() {
           location,
           public_repos,
           blog,
-          url,
+          html_url,
         } = response.data;
 
         const newProfile = new ProfileInformation();
@@ -45,7 +45,7 @@ function App() {
         newProfile.location = location ?? "No Location";
         newProfile.repository = public_repos;
         newProfile.website = blog ?? "No Website";
-        newProfile.url = url;
+        newProfile.url = html_url;
 
         setUserProfile(newProfile);
         setSpinnerEnable(false);
@@ -99,7 +99,12 @@ function App() {
           />
           <div className={"card__text"}>
             <h5 className={"card__text-title"}>{userProfile.completeName}</h5>
-            <a href={userProfile.url} className={"card__text-ref"}>
+            <a
+              href={userProfile.url}
+              target="_blank"
+              rel="noreferrer"
+              className={"card__text-ref"}
+            >
               {userProfile.userName}
             </a>
             <p className={"card__text-join"}>{userProfile.dateJoined}</p>
