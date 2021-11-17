@@ -39,12 +39,15 @@
     outline: none;
     border: none;
     border-radius: 1.5rem;
+    color: $white;
+    font-family: Monolisa, sans-serif;
+    font-weight: 700;
 
     &::placeholder{
       color: white;
       font-family: 'Lexend Deca', sans-serif;
-
     }
+
   }
 
   &__button{
@@ -59,6 +62,30 @@
     font-family: 'Lexend Deca', sans-serif;
     border-radius: 1.5rem;
     font-size: 1.7rem;
+    transition: all 0.5s;
+    cursor: pointer;
 
+    &:hover{
+      transform: scale(1.05);
+    }
+    &:active{
+      transform: translateY(-1rem);
+    }
   }
+}
+.spinnerControl{
+  @include centerElement(50%, 50%);
+}
+.error_description{
+  text-align: center;
+  color: #de1747;
+  font-family: MonoLisa-Bold, sans-serif;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+.hidden{
+  display: none;
+}
+.shown{
+  display: block;
 }
